@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "semantic graph-based keyword extraction model using ranking", "semantic graph-based keyword extraction model using ranking\semantic graph-based keyword extraction model using ranking.csproj", "{4CFB9A70-B469-493C-BC7E-B0932B530AE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SKEM", "semantic graph-based keyword extraction model using ranking\SKEM.csproj", "{4CFB9A70-B469-493C-BC7E-B0932B530AE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SKEMCollections", "SKEMCollections\SKEMCollections.csproj", "{B5228849-07FA-461A-9ECF-175ECFF2BAF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SKEMCollections", "SKEMCollections\SKEMCollections.csproj", "{B5228849-07FA-461A-9ECF-175ECFF2BAF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PushToMongoDB", "PushToMongoDB\PushToMongoDB.csproj", "{FF4D50FA-01E2-45DD-A766-4AA2127CD9AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PushToMongoDB", "PushToMongoDB\PushToMongoDB.csproj", "{FF4D50FA-01E2-45DD-A766-4AA2127CD9AB}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "SKEMPython", "SKEMPython\SKEMPython.pyproj", "{BAC7D6CA-DF88-4B22-A6C0-573BC82AFD38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,8 @@ Global
 		{FF4D50FA-01E2-45DD-A766-4AA2127CD9AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF4D50FA-01E2-45DD-A766-4AA2127CD9AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF4D50FA-01E2-45DD-A766-4AA2127CD9AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAC7D6CA-DF88-4B22-A6C0-573BC82AFD38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAC7D6CA-DF88-4B22-A6C0-573BC82AFD38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
