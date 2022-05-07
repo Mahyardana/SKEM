@@ -4,14 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>bac7d6ca-df88-4b22-a6c0-573bc82afd38</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>SKEMPython.py</StartupFile>
+    <StartupFile>SKEMSemanticGraph.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>SKEMPython</Name>
     <RootNamespace>SKEMPython</RootNamespace>
-    <InterpreterId>Global|VisualStudio|pypy3.9-v7.3.9-win64</InterpreterId>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,6 +23,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="SKEMPython.py" />
+    <Compile Include="SKEMSemanticGraph.py" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">

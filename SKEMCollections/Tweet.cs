@@ -15,5 +15,6 @@ namespace SKEMCollections
         public string authorName;
         public string authorUrl;
         public string fullText;
+        public string[] words;
     }
 }
