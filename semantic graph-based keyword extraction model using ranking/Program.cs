@@ -90,7 +90,7 @@ foreach (var w in words)
 }
 //wcollection.InsertMany(wordslist, new InsertManyOptions { IsOrdered = false });
 wordslist.Sort((a, b) => Math.Sign(b.SIR - a.SIR));
-var filtered = wordslist.Take(500).ToArray();
+var filtered = wordslist.Take(10000).ToArray();
 var graph = new BidirectionalGraph<string, Edge<string>>();
 //int i = 0;
 //double sum = 0;
@@ -131,6 +131,6 @@ for (int i = 0; i < filtered.Length; i++)
         }
     }
 }
-QuickGraph.Algorithms.
-var graphviz = new GraphvizAlgorithm<string, Edge<string>>(graph);
-graphviz.Generate(new SKEM.FileDotEngine() { skems = labellist.ToArray() }, "graph");
+SKEM.Neo4jFileEngine.GenerateCypher("skem.cypher", graph);
+
+
