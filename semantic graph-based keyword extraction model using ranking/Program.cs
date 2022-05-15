@@ -106,7 +106,7 @@ var graph = new BidirectionalGraph<string, Edge<string>>();
 //    }
 //}
 //var avg = sum / i;
-var k = 0.02;
+var k = 0.05;
 var labellist = new List<string>();
 for (int i = 0; i < filtered.Length; i++)
 {
@@ -132,5 +132,7 @@ for (int i = 0; i < filtered.Length; i++)
     }
 }
 SKEM.Neo4jFileEngine.GenerateCypher("skem.cypher", graph);
+var dotgraph=new GraphvizAlgorithm<string,Edge<string>>(graph);
+File.WriteAllText("graph.dot",dotgraph.Generate());
 
 
